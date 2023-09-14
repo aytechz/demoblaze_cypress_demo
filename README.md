@@ -1,2 +1,2 @@
-# swaglab_cypress_demo
-Swaglab Cypress Automation Demo Repo
+# demoblaze_cypress_demo
+Demoblaze Cypress Automation Demo Repo
