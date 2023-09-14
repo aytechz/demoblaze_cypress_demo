@@ -1,0 +1,17 @@
+{
+  "name": "swaglabs",
+  "version": "1.0.0",
+  "description": "swaglabs automation with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fatih Aytekin",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
