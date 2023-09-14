@@ -26,6 +26,9 @@
 import loginPage from "./page/login.page";
 
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+/**Login with cy.session()
+ * Multiple blocks can run under same describe block
+ */
 Cypress.Commands.add('login',(username, password)=>{
     cy.session([username,password], ()=>{
         cy.visit('/');
