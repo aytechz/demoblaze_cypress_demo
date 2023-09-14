@@ -1,16 +1,21 @@
 class LoginPage{
-    // usernameField() {return cy.get('#user-name')}
-    // passwordField() {return cy.get('#password')}
-    // loginButton() {return cy.get('#login-button')}
+    loginNavigationButton(){return cy.get('#login2')}
+    usernameField() {return cy.get('#loginusername')}
+    passwordField() {return cy.get('#loginpassword')}
+    loginButton() {return cy.get('[onclick="logIn()"]')}
+    logoutButton() {return cy.get('#logout2')}
 
-    // /**Login method use 
-    //  * the usernames from cypress.config.js file 
-    //  * 'standard_u'*/
-    // login(username, password){
-    //     this.usernameField().type(Cypress.env(username))
-    //     this.passwordField().type(Cypress.env(password))
-    //     this.loginButton().click()
-    // }
+    /**Login method use 
+     * the usernames from cypress.config.js file 
+     * 'standard_u'*/
+    login(username, password){
+        this.loginNavigationButton().click();
+        this.usernameField().should('be.visible');
+        this.usernameField().clear().type(username)
+        this.passwordField().clear().type(password)
+        this.loginButton().click();
+        this.logoutButton().should('be.visible');
+    }
 
 
 }
