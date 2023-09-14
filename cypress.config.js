@@ -6,15 +6,13 @@ module.exports = defineConfig({
       // implement node event listeners here
       
     },
-    baseUrl: 'https://www.saucedemo.com/',
+    baseUrl: 'https://demoblaze.com/',
     "chromeWebSecurity": false,
+    
 
   },
   env: {
-    standard_u : 'standard_user',
-    locked_u : 'locked_out_user',
-    problem_u: 'problem_user',
-    glitch_u: 'performance_glitch_user',
-    pass : 'secret_sauce'
+    user : 'test',
+    pass : 'test'
   }
 });
